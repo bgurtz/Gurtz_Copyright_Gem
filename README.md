@@ -26,6 +26,18 @@ before_action :set_copyright
 def set_copyright
 	@copyright = GurtzCopyright::Renderer.copyright 'Brian Gurtz', 'All rights reserved'
 end
+# and use the below on the pages to call it on the pages.
+<%= @copyright %>
+```
+### Or you can add it to the application_helper.rb
+```ruby
+  def copyright_generator
+    @copyright = GurtzCopyright::Renderer.copyright 'Brian Gurtz', 'All rights reserved'
+  end
+```
+### and use this code in the pages you want it to show 
+```ruby
+<%= copyright_generator %>
 ```
 
 ## Development
