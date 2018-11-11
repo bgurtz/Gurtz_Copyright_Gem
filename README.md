@@ -19,8 +19,13 @@ Or install it yourself as:
     $ gem install gurtz_copyright
 
 ## Usage
+### Goes in the application_controller.rb
 ```ruby
-@copyright = GurtzCopyright::Renderer.copyright 'Brian Gurtz', 'All rights reserved
+before_action :set_copyright
+
+def set_copyright
+	@copyright = GurtzCopyright::Renderer.copyright 'Brian Gurtz', 'All rights reserved'
+end
 ```
 
 ## Development
