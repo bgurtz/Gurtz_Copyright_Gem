@@ -1,6 +1,6 @@
 [![Gem Version](https://badge.fury.io/rb/gurtz_copyright.svg)](https://badge.fury.io/rb/gurtz_copyright) 
 
-# GurtzCopyright
+# Gurtz Copyright Gem
 
 Creats copyrights for pages with <% copyright %> with current year, name and all rights reserved
 
